@@ -17,5 +17,4 @@ const Title = styled.h1`
     text-align: center;
     color: #e91e63;
 `;
-// commit
 
