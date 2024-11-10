@@ -4,13 +4,16 @@ import {SectionTitle} from "../../../conmponents/SectionTitle";
 import {Icon} from "../../../conmponents/icon/Icon";
 import {Slider} from "../../../conmponents/slider/Slider";
 import {FlexWrapper} from "../../../conmponents/FlexWrapper";
+import {IconWrapper} from "../skills/skill/Skill";
 
 export const Testimony = () => {
     return (
         <StyledTestimony>
             <SectionTitle>Testimony</SectionTitle>
             <FlexWrapper direction={"column"} align={"center"}>
-                <Icon iconId={"quote"}/>
+                <IconWrapper>
+                    <Icon iconId={"quote"}/>
+                </IconWrapper>
                 <Slider/>
             </FlexWrapper>
         </StyledTestimony>

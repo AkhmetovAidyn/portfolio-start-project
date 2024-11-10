@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../syles/Theme";
 
 export const Button = styled.button`
     font-weight: 400;
@@ -7,4 +8,27 @@ export const Button = styled.button`
     text-transform: uppercase;
     width: 170px;
     height: 32px;
+    position: relative;
+    z-index: 0;
+    
+    &:hover {
+        &::before {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    &::before {
+        content: "";
+        display: inline-block;
+        height: 10px;
+        width: 50%;
+        background-color: ${theme.colors.accent};
+        
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(-50%);
+    }
 `

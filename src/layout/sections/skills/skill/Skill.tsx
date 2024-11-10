@@ -28,10 +28,10 @@ const StyledSkill = styled.div`
     padding: 62px 20px 40px;
 `
 
-const IconWrapper = styled.div`
+export const IconWrapper = styled.div`
     position: relative;
     
-    &:before {
+    &::before {
         content: '';
         display: inline-block;
         width: 80px;
@@ -42,7 +42,7 @@ const IconWrapper = styled.div`
         position: absolute;
         left: 50%;
         top: 50%;
-        transform-origin: left top;
+        transform-origin: top left;
     }
 `
 
