@@ -32,7 +32,7 @@ export const IconWrapper = styled.div`
     position: relative;
     
     &::before {
-        content: '';
+        content: "";
         display: inline-block;
         width: 80px;
         height: 80px;
