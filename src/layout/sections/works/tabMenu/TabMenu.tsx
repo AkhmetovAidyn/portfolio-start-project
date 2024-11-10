@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {theme} from "../../../../syles/Theme";
+import {Link} from "../../../../conmponents/Link";
 
 
 export const TabMenu = (props: {menuItems: Array<string>}) => {
@@ -19,32 +19,14 @@ export const TabMenu = (props: {menuItems: Array<string>}) => {
 
 
 const StyledTabMenu = styled.nav`
+    margin-bottom: 40px;
     ul {
         display: flex;
-        gap: 30px;
+        gap: 20px;
         justify-content: center;
     }
 `
 
 const ListItem = styled.li `
-    position: relative;
-`
-
-const Link = styled.a`
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
     
-    &:before {
-        content: '';
-        display: inline-block;
-        height: 10px;
-        background-color: ${theme.colors.accent};
-        
-        position: absolute;
-        bottom: 0;
-        left: -10px;
-        right: -10px;
-    }
 `
