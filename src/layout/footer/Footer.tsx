@@ -54,7 +54,7 @@ const Name = styled.span`
 
 const SocialList = styled.ul`
     display: flex;
-    gap: 30px;
+    gap: 20px;
     margin: 30px 0;
 `
 
@@ -63,7 +63,21 @@ const SocialItem = styled.li`
 `
 
 const SocialLink = styled.a`
-
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: ${theme.colors.accent};
+    
+    &:hover {
+        color: ${theme.colors.primaryBg};
+        transform: translateY(-4px);
+    }
 `
 
 const Copyright = styled.small`
