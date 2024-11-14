@@ -64,7 +64,4 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 14px;
         line-height: 1.4; 
     }
-    
-    
-    //global style
 `
