@@ -38,7 +38,6 @@ const StyledHeaderMenu = styled.nav`
     }
 `
 
-
 const Link = styled.a`
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
