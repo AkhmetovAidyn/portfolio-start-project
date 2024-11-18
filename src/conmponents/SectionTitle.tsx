@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import {theme} from "../syles/Theme";
+import {font} from "../syles/Common";
 
 export  const SectionTitle = styled.h2`
+    ${font({family: "'Josefin Sans', sans-serif", weight: 600, Fmax: 36, Fmin: 30})}
+    
     text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 600;
+    //font-family: "Josefin Sans", sans-serif;
+    //font-weight: 600;
     font-size: 36px;
     letter-spacing: 0.14em;
     margin-bottom: 90px;
@@ -24,3 +27,4 @@ export  const SectionTitle = styled.h2`
         transform: translateX(-50%);
     } 
 `
+
