@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../../conmponents/FlexWrapper";
 import {Container} from "../../../conmponents/Container";
 import {theme} from "../../../syles/Theme";
 import {font} from "../../../syles/Common";
+// import {font} from "../../../syles/Common";
 
 export const Main = () => {
     return (
@@ -69,20 +70,17 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
-    font-weight: 400;
-    font-size: 27px;
+    //font-weight: 400;
+    //font-size: 27px;
+    ${font({weight: 400, Fmax: 27, Fmin: 20})}
 `
 
-const SmallText = styled.h2`
-    font-weight: 400;
-    font-size: 14px;
-`
 
 const Name = styled.h2`
-    ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    font-size: 50px;
+   ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
+    //font-family: 'Josefin Sans', sans-serif;
+    //font-weight: 700;
+    //font-size: 50px;
     letter-spacing: 0.05em;
     margin: 10px 0;
 
@@ -102,4 +100,9 @@ const Name = styled.h2`
             z-index: -1;
         }
     }
+`
+
+const SmallText = styled.h2`
+    font-weight: 400;
+    font-size: 14px;
 `
