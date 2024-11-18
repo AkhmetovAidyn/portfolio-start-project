@@ -4,6 +4,7 @@ import photo from '../../../assets/images/photo.jpg'
 import {FlexWrapper} from "../../../conmponents/FlexWrapper";
 import {Container} from "../../../conmponents/Container";
 import {theme} from "../../../syles/Theme";
+import {font} from "../../../syles/Common";
 
 export const Main = () => {
     return (
@@ -48,6 +49,11 @@ const PhotoWrapper = styled.div`
         top: -24px;
         left: 24px;
         z-index: -1;
+        
+        @media ${theme.media.mobile} {
+            width: 314px;
+            height: 414px;
+        }
     }
 `
 
@@ -73,7 +79,8 @@ const SmallText = styled.h2`
 `
 
 const Name = styled.h2`
-    font-family: "Josefin Sans", sans-serif;
+    ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 50px;
     letter-spacing: 0.05em;
@@ -89,6 +96,7 @@ const Name = styled.h2`
             width: 100%;
             height: 20px;
             background-color: ${theme.colors.accent};
+            
             position: absolute;
             bottom: 0;
             z-index: -1;
