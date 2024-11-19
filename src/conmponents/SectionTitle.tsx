@@ -25,6 +25,10 @@ export  const SectionTitle = styled.h2`
         left: 50%;
         bottom: -30px;
         transform: translateX(-50%);
+        
+        @media ${theme.media.mobile} {
+            bottom: 24px;
+        }
     } 
 `
 
