@@ -11,6 +11,8 @@ const items = ["Home", "Skills", "Works", "Testimony", "Contact"]
 
 
 export const Header: React.FC = () => {
+
+
     return (
         <S.Header>
             <Container>
