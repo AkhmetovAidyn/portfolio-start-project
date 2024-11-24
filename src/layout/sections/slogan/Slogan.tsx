@@ -5,7 +5,7 @@ import {Button} from "../../../conmponents/Button";
 import {Container} from "../../../conmponents/Container";
 import {FlexWrapper} from "../../../conmponents/FlexWrapper";
 
-export const Slogan = () => {
+export const Slogan: React.FC = () => {
     return (
         <StyledSlogan>
             <Container>
