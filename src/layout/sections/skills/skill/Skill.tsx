@@ -1,8 +1,7 @@
 import React from 'react';
 import {Icon} from "../../../../conmponents/icon/Icon";
-import styled from "styled-components";
 import {FlexWrapper} from "../../../../conmponents/FlexWrapper";
-import {theme} from "../../../../syles/Theme";
+import {S} from '../Skills_Styles'
 
 type SkillPropsType = {
     iconId: string
@@ -12,14 +11,14 @@ type SkillPropsType = {
 
 export const Skill = (props: SkillPropsType) => {
     return (
-        <StyledSkill>
+        <S.Skill>
             <FlexWrapper direction={"column"} align={"center"}>
-                <IconWrapper>
+                <S.IconWrapper>
                     <Icon iconId={props.iconId}/>
-                </IconWrapper>
-                <SkillTitle>{props.title}</SkillTitle>
-                <SkillText>{props.description}</SkillText>
+                </S.IconWrapper>
+                <S.SkillTitle>{props.title}</S.SkillTitle>
+                <S.SkillText>{props.description}</S.SkillText>
             </FlexWrapper>
-        </StyledSkill>
+        </S.Skill>
     );
 };

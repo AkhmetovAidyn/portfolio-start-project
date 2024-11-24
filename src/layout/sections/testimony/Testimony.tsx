@@ -4,8 +4,9 @@ import {SectionTitle} from "../../../conmponents/SectionTitle";
 import {Icon} from "../../../conmponents/icon/Icon";
 import {Slider} from "../../../conmponents/slider/Slider";
 import {FlexWrapper} from "../../../conmponents/FlexWrapper";
-import {IconWrapper} from "../skills/skill/Skill";
+// import {IconWrapper} from "../skills/skill/Skill";
 import {Container} from "../../../conmponents/Container";
+import {S} from '../skills/Skills_Styles'
 
 export const Testimony = () => {
     return (
@@ -13,9 +14,9 @@ export const Testimony = () => {
             <Container>
                 <SectionTitle>Testimony</SectionTitle>
                 <FlexWrapper direction={"column"} align={"center"}>
-                    <IconWrapper>
+                    <S.IconWrapper>
                         <Icon iconId={"quote"}/>
-                    </IconWrapper>
+                    </S.IconWrapper>
                     <Slider/>
                 </FlexWrapper>
             </Container>
@@ -28,7 +29,7 @@ const StyledTestimony = styled.section`
     background-color: #5546d8;
     min-height: 50vh;
 
-    ${IconWrapper} {
+    ${S.IconWrapper} {
         margin: 28px 0 72px;
     }
 `

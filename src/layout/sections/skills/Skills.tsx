@@ -1,10 +1,9 @@
 import React from 'react';
-import styled from "styled-components";
 import {FlexWrapper} from "../../../conmponents/FlexWrapper";
 import {SectionTitle} from "../../../conmponents/SectionTitle";
 import {Skill} from "./skill/Skill";
 import {Container} from "../../../conmponents/Container";
-
+import {S} from './Skills_Styles'
 
 const skillData = [
     {
@@ -42,7 +41,7 @@ const skillData = [
 
 export const Skills = () => {
     return (
-        <StyledSkills>
+        <S.Skills>
             <Container>
                 <SectionTitle>
                     My Skills
@@ -56,7 +55,7 @@ export const Skills = () => {
                     })}
                 </FlexWrapper>
             </Container>
-        </StyledSkills>
+        </S.Skills>
     );
 };
 
