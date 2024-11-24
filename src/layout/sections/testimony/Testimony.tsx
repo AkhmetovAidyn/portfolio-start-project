@@ -4,11 +4,10 @@ import {SectionTitle} from "../../../conmponents/SectionTitle";
 import {Icon} from "../../../conmponents/icon/Icon";
 import {Slider} from "../../../conmponents/slider/Slider";
 import {FlexWrapper} from "../../../conmponents/FlexWrapper";
-// import {IconWrapper} from "../skills/skill/Skill";
 import {Container} from "../../../conmponents/Container";
 import {S} from '../skills/Skills_Styles'
 
-export const Testimony = () => {
+export const Testimony: React.FC = () => {
     return (
         <StyledTestimony>
             <Container>
