@@ -2,9 +2,11 @@ import React from 'react';
 import styled from "styled-components";
 import {Link} from "../../../../conmponents/Link";
 
+export type TabStatusType = "all" | "landing" | "react" | "spa"
+
 type TabMenuPropsType = {
-    tabsItems: Array<{status: "all" | "landing" | "react" | "spa", title: string}>
-    changeFilterStatus: (value: "all" | "landing" | "react" | "spa") => void
+    tabsItems: Array<{status: TabStatusType, title: string}>
+    changeFilterStatus: (value: TabStatusType) => void
 }
 
 

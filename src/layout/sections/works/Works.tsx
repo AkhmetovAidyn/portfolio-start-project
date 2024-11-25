@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {SectionTitle} from "../../../conmponents/SectionTitle";
-import {TabMenu} from "./tabMenu/TabMenu";
+import {TabMenu, TabStatusType} from "./tabMenu/TabMenu";
 import {FlexWrapper} from "../../../conmponents/FlexWrapper";
 import {Work} from "./work/Work";
 import socialImg from './../../../assets/images/social.jpg'
@@ -8,9 +8,8 @@ import timerImg from './../../../assets/images/sell.jpg'
 import {Container} from "../../../conmponents/Container";
 import {S} from './Works_Styles'
 
-// const tabsItems = ["All", "landing page", "React", "spa"]
 
-const tabsItems: Array<{status: "all" | "landing" | "react" | "spa", title: string}> = [
+const tabsItems: Array<{status: TabStatusType, title: string}> = [
     {
         title: "All",
         status: "all"
@@ -62,7 +61,7 @@ export const Works: React.FC = () => {
         filteredWorks = worksData.filter(work => work.type === "spa")
     }
 
-    function changeFilterStatus(value: "all" | "landing" | "react" | "spa") {
+    function changeFilterStatus(value: TabStatusType) {
         setCurrentFilterStatus(value)
     }
 
