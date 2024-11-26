@@ -7,6 +7,7 @@ export type TabStatusType = "all" | "landing" | "react" | "spa"
 type TabMenuPropsType = {
     tabsItems: Array<{status: TabStatusType, title: string}>
     changeFilterStatus: (value: TabStatusType) => void
+    currentFilterStatus: string
 }
 
 
@@ -16,7 +17,7 @@ export const TabMenu = (props: TabMenuPropsType) => {
             <ul>
                 {props.tabsItems.map((item, index) => {
                     return <ListItem key={index}>
-                        <Link as={"button"} onClick={()=>{props.changeFilterStatus(item.status)}}>{item.title}</Link>
+                        <Link active={true} as={"button"} onClick={()=>{props.changeFilterStatus(item.status)}}>{item.title}</Link>
                     </ListItem>
                 })}
             </ul>
