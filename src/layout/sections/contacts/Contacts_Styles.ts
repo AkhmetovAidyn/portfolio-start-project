@@ -3,7 +3,7 @@ import {theme} from "../../../syles/Theme";
 
 
 const Contacts = styled.section`
-    
+    position: relative;
 `
 
 const Form = styled.form`

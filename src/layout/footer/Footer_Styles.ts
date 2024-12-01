@@ -3,6 +3,8 @@ import {theme} from "../../syles/Theme";
 import {font} from "../../syles/Common";
 
 const Footer = styled.footer`
+    position: relative;
+
     background-color: ${theme.colors.primaryBg};
     padding: 40px 0;
 `

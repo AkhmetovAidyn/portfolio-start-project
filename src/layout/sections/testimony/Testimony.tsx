@@ -27,6 +27,7 @@ export const Testimony: React.FC = () => {
 const StyledTestimony = styled.section`
     background-color: #5546d8;
     min-height: 50vh;
+    position: relative;
 
     ${S.IconWrapper} {
         margin: 28px 0 72px;

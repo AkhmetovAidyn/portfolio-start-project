@@ -28,10 +28,10 @@ export const Particle = () => {
                 fpsLimit: 120,
                 interactivity: {
                     events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
+                        // onClick: {
+                        //     enable: true,
+                        //     mode: "push",
+                        // },
                         onHover: {
                             enable: true,
                             mode: "repulse",
@@ -54,7 +54,7 @@ export const Particle = () => {
                     },
                     links: {
                         color: "#ffffff",
-                        distance: 150,
+                        distance: 200,
                         enable: true,
                         opacity: 0.5,
                         width: 1,
@@ -66,15 +66,15 @@ export const Particle = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 2,
                         straight: false,
                     },
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 1000,
                         },
-                        value: 80,
+                        value: 50,
                     },
                     opacity: {
                         value: 0.5,
@@ -83,7 +83,7 @@ export const Particle = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 0.2, max: 1 },
                     },
                 },
                 detectRetina: true,
