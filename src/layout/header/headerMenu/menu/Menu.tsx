@@ -34,6 +34,7 @@ export  const Menu: React.FC = () => {
                         activeClass="active"
                         to={item.href}
                         smooth={true}
+                        spy={true}
                     >
                         {item.title}
                         <S.Mask>
