@@ -1,14 +1,11 @@
 import {theme} from "../../../syles/Theme";
 import styled, {css} from "styled-components";
+import {Link} from "react-scroll";
 
 // Menu
 
-const Link = styled.a`
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    text-align: center;
-    color: transparent;
+const MenuItem = styled.li`
+    position: relative;
 `
 
 const Mask = styled.span`
@@ -31,9 +28,13 @@ const Mask = styled.span`
     }
 `
 
+const NavLink = styled(Link)`
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: transparent;
 
-const MenuItem = styled.li`
-    position: relative;
 
     &::before {
         content: '';
@@ -49,7 +50,7 @@ const MenuItem = styled.li`
 
         transform: scale(0);
     }
-
+    
     &:hover {
         &::before {
             transform: scale(1);
@@ -167,7 +168,7 @@ const DesktopMenu = styled.nav`
 
 
 export const S = {
-    Link,
+    NavLink,
     MenuItem,
     Mask,
     MobileMenu,
