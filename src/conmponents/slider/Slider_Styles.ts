@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import {theme} from "../../syles/Theme";
 
-const Slider = styled.div` 
-    border: 1px solid red;
+const Slider = styled.div`
     max-width: 500px;
     width: 100%;
     display: flex;
